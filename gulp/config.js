@@ -21,6 +21,16 @@ module.exports = {
     },
     resolve: {
       extensions: ['', '.js']
+    },
+    module: {
+      loaders: [
+        {
+          test: /\.js$/,
+          exclude: /node_modules/,
+          loader: '6to5-loader' // <- without es6 polyfills
+          // loader: '6to5-loader?experimental&optional=selfContained'
+        }
+      ]
     }
   },
 

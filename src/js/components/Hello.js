@@ -1,7 +1,15 @@
-function Hello() {
-    'use strict';
+export default class Hello {
+  constructor(message = '') {
+    this.message = message
+  }
 
-    this.message = 'Hello!';
+  say() {
+    console.log(this.message)
+  }
+
+  later() {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => resolve(), 1000)
+    })
+  }
 }
-
-module.exports = Hello;
