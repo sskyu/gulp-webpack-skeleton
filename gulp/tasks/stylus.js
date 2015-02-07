@@ -8,11 +8,11 @@ var minify = require('gulp-minify-css');
 var config = require('../config').stylus;
 
 gulp.task('stylus', function () {
-    gulp.src(config.src)
-        .pipe(plumber())
-        .pipe(stylus())
-        .pipe(concat(config.output))
-        .pipe(autoprefixer(config.autoprefixer))
-        .pipe(gulpif(config.minify, minify()))
-        .pipe(gulp.dest(config.dest));
+  gulp.src(config.src)
+    .pipe(plumber())
+    .pipe(stylus())
+    .pipe(concat(config.output))
+    .pipe(autoprefixer(config.autoprefixer))
+    .pipe(gulpif(config.minify, minify()))
+    .pipe(gulp.dest(config.dest));
 });
