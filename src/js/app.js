@@ -1,9 +1,6 @@
-(function () {
-    'use strict';
+import Hello from './components/Hello.js'
 
-    var Hello = require('./components/Hello');
+var hello = new Hello('Hello')
 
-    var hello = new Hello();
-
-    document.write(hello.message);
-})();
+hello.say()
+hello.later().then(() => hello.say())
