@@ -27,8 +27,8 @@ module.exports = {
         {
           test: /\.js$/,
           exclude: /node_modules/,
-          loader: '6to5-loader' // <- without es6 polyfills
-          // loader: '6to5-loader?experimental&optional=selfContained'
+          loader: 'babel-loader' // <- without es6 polyfills
+          // loader: 'babel-loader?experimental&optional=selfContained'
         }
       ]
     }
