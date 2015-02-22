@@ -57,5 +57,13 @@ module.exports = {
     js: relativeSrcPath + '/js/**',
     styl: relativeSrcPath + '/styl/**',
     www: relativeSrcPath + '/www/index.html'
+  },
+
+  webserver: {
+    host: 'localhost',
+    port: 8000,
+    livereload: true,
+    fallback: dest,
+    open: 'http://localhost:8000'
   }
 };
