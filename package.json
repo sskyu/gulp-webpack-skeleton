@@ -9,8 +9,8 @@
   "author": "sskyu",
   "license": "MIT",
   "devDependencies": {
-    "babel-core": "^4.4.3",
-    "babel-loader": "^4.0.0",
+    "babel-core": "~5.1.10",
+    "babel-loader": "~5.0.0",
     "gulp": "~3.8.10",
     "gulp-autoprefixer": "^2.0.0",
     "gulp-concat": "^2.4.2",
@@ -25,6 +25,6 @@
     "require-dir": "~0.1.0"
   },
   "dependencies": {
-    "babel-runtime": "^4.4.3"
+    "babel-runtime": "~5.1.10"
   }
 }

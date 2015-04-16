@@ -28,7 +28,7 @@ module.exports = {
           test: /\.js$/,
           exclude: /node_modules/,
           loader: 'babel-loader' // <- without es6 polyfills
-          // loader: 'babel-loader?experimental&optional=selfContained'
+          // loader: 'babel-loader?optional=runtime' // <- contain es6 polyfills
         }
       ]
     }
