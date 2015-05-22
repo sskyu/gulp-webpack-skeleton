@@ -4,6 +4,7 @@
 
     $ npm install -g gulp
     $ npm install
-    $ gulp build
+    $ npm run build
+    $ npm start
 
 And open ``build/index.html`` on your browser.
